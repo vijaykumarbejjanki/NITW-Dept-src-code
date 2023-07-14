@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Computer Science and Engineering Department| NITW</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/images/nitwlogo1.png" rel="icon" type="image/x-icon">
+  </head>
+  <body>
+   
+   <!-- <nav class="navbar navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/CS-logo_NITW.png" alt="logo" class="img-fluid">
+        </a>
+        <div class="d-flex" style="float: right">
+          <div class="social-links" style=" float: right ">
+            <small>E: </small>
+            <a href="mailto:cse_hod@nitw.ac.in" style="color:#6c757d!important;font-weight:500">cse_hod@nitw.ac.in</a>
+            <br>
+            <p style="color:#6c757d!important;font-weight:500">
+              <small>M: </small>9490165347
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>-->
+
+
+
+    <div class="container">
+     
+      <section class="py-4 header">
+        <header>
+          <img src="assets/images/CS-banner_NITW-new.png" class="img-fluid">
+        </header>
+        <div class="row">
+          <div class="col-md-3">
+            <!-- Tabs nav -->
+            <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+             <!--<a class="nav-link    active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                <span>Home</span>
+              </a>--> 
+              <a class="nav-link   active" id="v-pills-visionandmission-tab" data-toggle="pill" href="#v-pills-visionandmission" role="tab" aria-controls="v-pills-visionandmission" aria-selected="false">
+                <span>About</span>
+              </a>
+
+              <a class="nav-link   " id="v-pills-academics-tab" data-toggle="pill" href="#v-pills-academics" role="tab" aria-controls="v-pills-academics" aria-selected="false">
+                <span>Academic Programmes</span>
+              </a>
+
+
+              <a class="nav-link   " id="v-pills-Faculty-tab" data-toggle="pill" href="#v-pills-Faculty" role="tab" aria-controls="v-pills-Faculty" aria-selected="false">
+                <span>Faculty </a>
+
+                  <a class="nav-link   " id="v-pills-NonTeachingStaff-tab" data-toggle="pill" href="#v-pills-NonTeachingStaff" role="tab" aria-controls="v-pills-NonTeachingStaff" aria-selected="false">
+                    <span>Non-Teaching Staff </a>
+
+
+                      <a class="nav-link   " id="v-pills-NotableAlumni-tab" data-toggle="pill" href="#v-pills-NotableAlumni" role="tab" aria-controls="v-pills-NotableAlumni" aria-selected="false">
+                        <span>Notable Alumni </a>
+
+                      <a class="nav-link   " id="v-pills-Students-tab" data-toggle="pill" href="#v-pills-Students" role="tab" aria-controls="v-pills-Students" aria-selected="false">
+                        <span>Students Society</a>
+
+
+                          <a class="nav-link   " id="v-pills-AcademicResearchGroup-tab" data-toggle="pill" href="#v-pills-AcademicResearchGroup" role="tab" aria-controls="v-pills-AcademicResearchGroup" aria-selected="false">
+                            <span>Academic Research Group</a>
+
+                              <a class="nav-link   " id="v-pills-ResearchScholars-tab" data-toggle="pill" href="#v-pills-ResearchScholars" role="tab" aria-controls="v-pills-ResearchScholars" aria-selected="false">
+                                <span>Research Scholars</span>
+                              </a>
+
+
+                              <a class="nav-link   " id="v-pills-labs-tab" data-toggle="pill" href="#v-pills-labs" role="tab" aria-controls="v-pills-labs" aria-selected="false">
+                                <span>Laboratory & Facilities</span>
+                              </a>
+
+
+                              <a class="nav-link   " id="v-pills-PhotoGallery-tab" data-toggle="pill" href="#v-pills-PhotoGallery" role="tab" aria-controls="v-pills-PhotoGallery" aria-selected="false">
+                                <span>Photo Gallery</span>
+                              </a>
+
+                          <!--<a class="nav-link   " id="v-pills-Phd-tab" data-toggle="pill" href="#v-pills-Phd" role="tab" aria-controls="v-pills-Phd" aria-selected="false">
+                            <span>PhD Current Scholars</a>-->
+
+
+                             <!-- <a class="nav-link   " id="v-pills-phdawardee-tab" data-toggle="pill" href="#v-pills-phdawardee" role="tab" aria-controls="v-pills-phdawardee" aria-selected="false">
+                                <span>Ph.D.Awardee</span>
+                              </a>-->
+
+                     
+
+                         <!-- <a class="nav-link   " id="v-pills-TechnicalSociety-tab" data-toggle="pill" href="#v-pills-TechnicalSociety" role="tab" aria-controls="v-pills-TechnicalSociety" aria-selected="false">
+                            <span>Technical Society</a>-->
+
+
+                              
+
+
+
+             
+             
+
+           
+
+              
+
+
+
+              <a class="nav-link   " id="v-pills-csea-tab" data-toggle="pill" href="#v-pills-csea" role="tab" aria-controls="v-pills-csea" aria-selected="false">
+                <span>CSEA</span>
+              </a>
+              
+              <a class="nav-link   " id="v-pills-research-tab" data-toggle="pill" href="#v-pills-research" role="tab" aria-controls="v-pills-research" aria-selected="false">
+                <span>Research</span>
+              </a>
+              
+             
+              
+              
+            </div>
+            <div class="head_of_dept">
+              <img src="assets/images/16345.jpg" alt="" class="img-fluid">
+              <a href="">
+                <h6>Prof. R. Padmavathy</h6>
+              </a>
+              <p> Head of the Department <br> cse_hod@nitw.ac.in <br> 9490165347 </p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <!-- Tabs content -->
+            <div class="tab-content" id="v-pills-tabContent">
+              
+              
+              <!--<div class="tab-pane fade   bg-white show active p-2" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                
+              </div>-->
+              <div class="tab-pane fade   bg-white show active p-2" id="v-pills-visionandmission" role="tabpanel" aria-labelledby="v-pills-visionandmission-tab">
+
+
+
+                <h4 class=" mb-4">Welcome to Computer Science and Engineering Department</h4>
+                <p>The Department of Computer Science & Engineering was established in the year 1991. The department offers high quality undergraduate, postgraduate and doctoral programs. The B. Tech (Computer Science and Engineering) program was started in the year 1983 with an intake of 20 students. The intake was subsequently increased to 120 in 2008. M. Tech (Computer Science and Engineering) program was started in 1987 with an intake of 18 and subsequently increased to 20 in 2008. M. Tech (Information Security) was introduced in the year 2008 Under ISEAP sanctioned by Ministry of Communication and Information Technology (MCIT), DOE, GOI, New Delhi with intake of 20. Later, it was renamed as Computer Science and Information Security. The Master of Computer Applications (MCA) program was started in 1986 with an intake of 30 and increased to 46 from 2008. B.Tech, M.Tech (CSE) and M.Tech (CSIS) programs were accredited in 2014 by NBA as per Washington Accord.</p>
+                <p>The department has distinguished and committed faculty members with PhD from reputed institutes. It has close rapport with MICROSOFT, TCS, INFOSYS, ORACLE, TRDDC-Pune, SUN Microsystems, EMC2, ACCENTURE, C-DAC, MOTOROLA, HONEYWELL, NOVELL, PHILIPS, SAMSUNG, and IBM-Bangalore. The department has MOUs with TCS, IBM, C-DAC and INFOSYS, for training students and faculty on latest cutting edge technologies and also to pursue Research and Development activities.The Department has been selected as a Remote Center under Information Security Awareness Project (ISEAP) Phase II, MCIT Dept of IT. Along with department of ECE, it is associated in E&ICT Academy project sanctioned by Department of Electronics and Information Technology, Govt of India for Rs.25 crores to train faculty from Engineering and Polytechnic Streams across Telangana, Andhra Pradesh, Karnataka States and Pudicherry, Andaman & Nicobar islands and Lakshadweep UTs.</p>
+                <!--<h4 class="mt-4">About</h4>
+                <p> The Department of Computer Science & Engineering was established in the year 1990. The department offers high quality undergraduate, postgraduate and doctoral programs. The department has distinguished and committed faculty. </p>
+                <p> The Department has close rapport with prestigious companies such as Microsoft, Tata Consultancy Services, Infosys, EM Corporation, Tata Research Design and Development Centre – Pune, SUN Microsystems, Accenture, C-DAC, and IBM-Bangalore. Four of the Professors from department were invited to participate in Microsoft Research Faculty Summit at Seattle, Redmond, USA under Microsoft University Relationship Program during 2002-2006. As a part of Microsoft University Relations Programme, the department has received 50,000 USD for R&D works and laboratory development during years 2002 to 2006. Also six faculty of the department were trained at UK under UK India project during 1995-99. </p>
+                <p>To improve the technical and research ability of faculty of various colleges, the department has conducted many faculty development workshops and MHRD sponsored refresher courses in Computer Science and its allied areas. The department has organized several expert lectures in the information technology area from various leading software professionals from USA through Skype software for the benefit of faculty and students.</p>
+                <p>In addition to teaching, faculty of this department were executed several research, software development, content development and consultancy oriented projects. Currently department faculty are guiding doctoral students in Distributed Systems, Parallel Processing, Model driven framework for automated software generation, Databases, Data Mining, Intrusion Detection, Information Security, Bio-informatics, Cryptography, Cryptanalysis, Social networks, Sentiment Analysis, Secure Multi-party Computations, Neural Networks and Soft Computing, Machine Learning, Software Engineering, Advanced Computer Networks, Cloud Computing, Internet of Things, Graph Theory and Algorithms and their allied areas. </p>
+                --><br>
+				<table class="table table-sm ">
+                  <tbody>
+                    <tr>
+                      <td>1983</td>
+                      <td> Started B Tech programme in Computer Science & Engineering. </td>
+                    </tr>
+                    <tr>
+                      <td>1986</td>
+                      <td>Started Master of Computer Applications programme. </td>
+                    </tr>
+                    <tr>
+                      <td>1987</td>
+                      <td>Started M Tech Programme in Computer Science & Engineering. </td>
+                    </tr>
+                    <tr>
+                      <td>1993</td>
+                      <td>Identified to undergo training under UK-India project. </td>
+                    </tr>
+                    <tr>
+                      <td>1999</td>
+                      <td> Launched MSIT programme in collaboration with CMU, USA. </td>
+                    </tr>
+                    <tr>
+                      <td> 2002</td>
+                      <td>Received $50,000 to activate Research activities and laboratory development in the department from Microsoft Corporation, Redmond, Seattle, USA as part of Microsoft University Relations Programme. </td>
+                    </tr>
+                    <tr>
+                      <td>2005</td>
+                      <td>Started Information Security Education Awareness Project (ISEAP) sponsored by Ministry of Communication and Information Technology, Dept. of Electronics and Information Technology, Govt. of India. </td>
+                    </tr>
+                    <tr>
+                      <td>2006</td>
+                      <td> As part of MHRD-NASSCOM initiative, started two months Finishing School for young engineering graduates programme to train un-employed youth in the area of information technology. </td>
+                    </tr>
+                    <tr>
+                      <td>2007</td>
+                      <td> Started full time Ph.D programme </td>
+                    </tr>
+                    <tr>
+                      <td>2007</td>
+                      <td>Accredited B Tech (CSE) and M Tech (CSE) programmes by NBA, New Delhi. </td>
+                    </tr>
+                    <tr>
+                      <td>2008</td>
+                      <td>Started M Tech programme in Information Security under Information Security Education Awareness Project (ISEAP) sponsored by Ministry of Communication and Information Technology, Dept. of Electronics and Information Technology, Govt. of India.</td>
+                    </tr>
+                    <tr>
+                      <td>2009</td>
+                      <td>Received Research fellowship grants for Doctoral students from Tata Consultancy Services.</td>
+                    </tr>
+                    <tr>
+                      <td>2012</td>
+                      <td>Signed MOU with Infosys Limited to execute industry sponsored project on Social Media Monitoring and measurement at Centre for Innovation and Incubation.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+
+                
+                
+
+
+
+                <h4>Vision</h4>
+                <p class=" text-muted mb-2">Attaining global recognition in Computer Science & Engineering education, research and training to meet the growing needs of the industry and society.</p>
+                <h4 class=" mt-4">Mission</h4>
+                <p class=" text-muted mb-2">Imparting quality education through well-designed curriculum in tune with the challenging software needs of the industry.</p>
+                <p class=" text-muted mb-2">Providing state-of-art research facilities to generate knowledge and develop technologies in the thrust areas of Computer Science and Engineering.</p>
+                <p class=" text-muted mb-2">Developing linkages with world class organizations to strengthen industry-academia relationships for mutual benefit.</p>
+              </div>
+              <div class="tab-pane fade   bg-white p-2" id="v-pills-academics" role="tabpanel" aria-labelledby="v-pills-academics-tab">
+
+
+
+                <h4 class=" mt-4">Ph.D.</h4>
+                <p>
+                  <a href="" target="_blank">
+                   Rules and Regulations of Ph.D. Program <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+
+
+                <h4 class=" mt-4">MCA</h4>
+                <p class=" text-muted mb-2">Master of Computer Applications(MCA) Program:</p>
+                <p class=" text-muted mb-2">Duration of the Program: <span class="highlight"> 3 Years </span>
+                </p>
+                <p class=" text-muted mb-2">Course Requirement:</p>
+                <p class=" text-muted mb-2">Program Structure:</p>
+                <p class=" text-muted mt-2 mb-0">The M.Tech program in Computer Science and Engineering consists of the following Semesters:</p>
+                <ul class="list_items_section" style="list-style-type:none">
+                  <li>Semester 1:</li>
+                  <li>Semester 2:</li>
+                  <li>Semester 3: </li>
+                  <li>Semester 4: </li>
+                  <li>Semester 5: </li>
+                  <li>Semester 6: <span class="highlight">Project Work</span>
+                  </li>
+                </ul>
+                <p class=" text-muted mb-2">Financial Assistance: <span class="highlight">No Financial Assistance for this program.</span>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    MCA Even Semester Timetable <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+
+
+
+
+
+
+
+
+                <h4 class=" mt-4">M. Tech</h4>
+                <p class=" text-muted mb-2">M. Tech (Computer Science and Engineering) program was started in 1987 with an intake of 18.</p>
+                <p class=" text-muted mb-2">M.Tech (Information Security) was introduced in the year 2008 with the intake of 20.</p>
+                <h6 class=" mt-4">Computer Science and Engineering (M.Tech)</h6>
+                <p class=" text-muted mb-2">Master of Technology (M.Tech)-CSE Program:</p>
+                <p class=" text-muted mb-2">Duration of the Program: <span class="highlight"> 2 Years </span>
+                </p>
+                <p class=" text-muted mb-2">Course Requirement:</p>
+                <p class=" text-muted mb-2">Program Structure:</p>
+                <p class=" text-muted mt-2 mb-0">The M.Tech program in Computer Science and Engineering consists of the following Semesters:</p>
+                <ul class="list_items_section" style="list-style-type:none">
+                  <li>Semester 1:</li>
+                  <li>Semester 2:</li>
+                  <li>Semester 3: <span class="highlight">Project work -Part-A</span>
+                  </li>
+                  <li>Semester 4: <span class="highlight">Project work -Part-B </li>
+                </ul>
+                <p class=" text-muted mb-2">Financial Assistance:</p>
+                <p>
+                  <a href="assets/docs/re-revise-mtech-csis-syllabus-august-20-2021.pdf" target="_blank">
+                    M.Tech CSE Scheme and Syllabus <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+
+
+
+
+                <h6 class=" mt-4">M.Tech Computer Science and Information Security (M.Tech)</h6>
+                <p class=" text-muted mb-2">Master of Technology (M.Tech)-Computer Science and Information Security Program:</p>
+                <p class=" text-muted mb-2">Duration of the Program: <span class="highlight"> 2 Years </span>
+                </p>
+                <p class=" text-muted mb-2">Course Requirement:</p>
+                <p class=" text-muted mt-2 mb-0">Program Structure: The M.Tech program in Computer Science and Information Security consists of the following Semesters:</p>
+                <ul class="list_items_section" style="list-style-type:none">
+                  <li>Semester 1:</li>
+                  <li>Semester 2:</li>
+                  <li>Semester 3: <span class="highlight">Project work -Part-A</span>
+                  </li>
+                  <li>Semester 4: <span class="highlight">Project work -Part-B </li>
+                </ul>
+                <p class=" text-muted mb-2">Financial Assistance: <a href="#" target="_blank">
+                    Scheme & Syllabi of Computer Science and Information Security <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    M.Tech Computer Science and Information Security (M.Tech) Scheme & Syllabi <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    M.Tech CSE Scheme and Syllabus <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+
+
+
+
+
+
+
+
+
+
+
+                <h4>B. Tech</h4>
+                <p>
+                  <a href="assets/docs/07_btech-in-cse.pdf" target="_blank">
+                    B.Tech Syllabus <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+               
+                
+               
+               
+              </div>
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-labs" role="tabpanel" aria-labelledby="v-pills-labs-tab">
+                <h4 class=" mb-4">Labs</h4>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Hardware</th>
+                      <th>No. of System</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>HP EliteDesk 800 g1 Small Form Factor Systemsi7-4770 CPU @3.40GHz, RAM 4GB, HDD 500GB </td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>HP Proliant 8300 Small Form Factor systems i7- 3770 CPU @ 3.40GHz, RAM 8GB, HDD 500GB</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class=" mt-4">Labs</h4>
+                <p class=" text-muted mb-2">Dual boot with Windows 7 and Ubuntu 14.04</p>
+                <p class=" text-muted mb-2">NetBeans 7</p>
+                <p class=" text-muted mb-2">MSDN</p>
+                <p class=" text-muted mb-2">Dev C++</p>
+                <h4 class=" mt-4">Data Engineering Laboratory</h4>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Hardware</th>
+                      <th>No. of System</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>HP EliteDesk 800 g1 SFF Systemsi7-4770 CPU @3.40GHz, 4GB RAM, 500GB HDD </td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class=" mt-4">Software</h4>
+                <p class=" text-muted mb-2">Cognos BIClementine Version 11.0</p>
+                <p class=" text-muted mb-2">Oracle 11g (Unlimited user Licenses)</p>
+                <p class=" text-muted mb-2">MSDN Academic Alliance Software</p>
+                <p class=" text-muted mb-2">Informatica (25 user licenses )</p>
+                <h4 class=" mt-4">Open Source Development Laboratory</h4>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Hardware</th>
+                      <th>No. of System</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>HP Proliant 8300 Small Form Factor systems i7- 3770 CPU @ 3.40GHz, RAM 8GB, HDD 500GB</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class=" mt-4">Software</h4>
+                <p class=" text-muted mb-2">Dual boot with Windows XP and Ubuntu 12.0</p>
+                <p class=" text-muted mb-2">NetBeans 7</p>
+                <p class=" text-muted mb-2">Oracle Client 10 </p>
+                <h4 class=" mt-4">Servers</h4>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Servers</th>
+                      <th> Hardware</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Windows File Server</td>
+                      <td>HP Proliant DL360e Gen8 intel® Xeon® CPU E5-2420 @1.90GHz with 32GB RAM, 2*2TB HDD)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Oracle Server</td>
+                      <td>HP Proliant DL160 Gen8 Intel® Xeon® CPU E5 -2630 @2.30GHz with 16GB RAM, 2*1TB</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>McAFEE Server</td>
+                      <td>HCL Intel® Xeon® CPU 3.40GHz with 4GB RAM, 3*120GB HDD</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Proxy Server </td>
+                      <td>Hp Compaq Elite 8300 SFF (i5 -3470) CPU @3.40GHz, RAM 2GB, HDD 500GB</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>COGNOS Server</td>
+                      <td> HP Proliant DL360 Intel® Xeon® CPU 3.20GHz, 3GB RAM, 160GB HDD</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Rational Rose Server </td>
+                      <td>IBM e-server Intel® Xeon™ CPU 2.40 GHz, 1GB RAM, 40GB HDD</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Linux Server </td>
+                      <td>HP Proliant DL360e Gen8 intel® Xeon® CPU E5-2420 @1.90GHz with 32GB RAM, 2*2TB HDD)</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>High Performance Computing Server (8 node Cluster) </td>
+                      <td>HP Proliant DL380P Gen82 x Intel® xeon® CPU E5-2640 (2.5 GHz / 6-core/15MB / 95w) Processor64 GB DDR RAM, HP SA 410i RAID controller with 1 GB FBWCHP SN1000E 16GB Dual Port, FC HBA/1200WIntel® xeon® CPU E5-2640 (2.5 GHz / 6-core/15MB / 95w) ProcessorIntel 7500 chip set with node controller</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Big Data Server</td>
+                      <td>HP Proliant DL980 Gen78 x Intel® xeon® CPU E7-2830 (2.13 GHz / 8-core/24MB / 105w) ProcessorIntel 7500 chip set with node controller, 512 GB DDR RAMHP SA 410i RAID controller with 1 GB FBWC6x600GB 10K HDD, DVD + RW 12 Nos. of PCI slots4x dual port Giga Bit Ethernet NIC and 2x 10GBPS Ethernet CardHP SN1000E 16GB Dual Port, FC HBA/1200WRack Mountable Hot pluggable Redundant Power Supplies and Redundant fans/ Server Manageability SoftwareOS: CentOS 6.5 Server with Hadoop2.2</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class=" mt-4">Software Engineering Laboratory</h4>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Hardware</th>
+                      <th>No. of System</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Dell Optiplex 760Intel Core2 duo CPU E8400 @3.00GHz, 300GB HDD, 4GB RAM</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Acer Veriton Intel Core i7 with 1TB HDD, 8 GB RAM</td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class=" mt-4">Software</h4>
+                <p class=" text-muted mb-2">Rational Testing Suite</p>
+                <p class=" text-muted mb-2">MSDN</p>
+                <p class=" text-muted mb-2">NetBeans 7 </p>
+                <p class=" text-muted mb-2">Microsoft Assembler</p>
+                <p class=" text-muted mb-2">Dev C++ </p>
+                <h4 class=" mt-4">Software Engineering Laboratory</h4>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Hardware</th>
+                      <th>No. of System</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>HP Proliant 8300 Micro Tower systemsi5 -3470 CPU @3.40GHz, RAM 2GB, 500GB HDD</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Dell Optiplex 760Intel Core2 duo CPU E8400 @3.00GHz, 300GB HDD, 4GB RAM</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>HCL Dual core2Intel® Core™ 2 Duo CPU E4500@2.20 GHz, 1GB RAM, 160GB HDD </td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class=" mt-4">Software</h4>
+                <p class=" text-muted mb-2">ONE Simulator</p>
+                <p class=" text-muted mb-2">NS3</p>
+                <p class=" text-muted mb-2">Rational Rose Tools</p>
+                <p class=" text-muted mb-2">MSDN</p>
+                <p class=" text-muted mb-2">Dev C++ </p>
+              </div>
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-csea" role="tabpanel" aria-labelledby="v-pills-csea-tab">
+                <h4 class=" mb-4">Computer Science and Engineering Association (CSEA)</h4>
+                <p class=" text-muted mb-2">CSEA has been functioning over the years in the department of Computer Science & Engineering with the objectives of promoting student activities for organizing and participating in co-curricular activities by the students of the Department.</p>
+                <p class=" text-muted mb-2">At the start of new academic session, CSEA recruits its new team every year. Interviews are done for Several Roles like General Secretary, Additional Secretary, Joint Secretary and Executive Members.</p>
+                <p class=" text-muted mb-2">The events conducted by CSEA promote Organizing capabilities and communication skills of students in addition to developing the technical knowledge.</p>
+                <p class="text-muted mb-2">Link to CSEA Official Website : <a href="#" target="_blank"> www.cseanitw.in/team/ <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </p>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Name</th>
+                      <th>Designation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Dr. S. Ravi Chandra</td>
+                      <td>HOD</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Prof. S. G. Sanjeevi</td>
+                      <td>Staff Advisor</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Dr.P. Venkata Subba Reddy</td>
+                      <td>Treasurer</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+             
+             
+             <!-- <div class="tab-pane fade  bg-white p-2" id="v-pills-phdawardee" role="tabpanel" aria-labelledby="v-pills-phdawardee-tab">
+                <h4 class=" mb-4">Ph.D. Awardee</h4>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">L</span>ist of Ph.D. Awardees <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+              </div>-->
+
+
+
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-research" role="tabpanel" aria-labelledby="v-pills-research-tab">
+                <h4>Areas of Research</h4>
+                <p class=" text-muted mb-2">Bio-Informatics</p>
+                <p class=" text-muted mb-2">Computer Networks</p>
+                <p class=" text-muted mb-2">Cryptanalysis</p>
+                <p class=" text-muted mb-2">Database Technologies Data Mining / IDS </p>
+                <p class=" text-muted mb-2">Distributed Systems </p>
+                <p class=" text-muted mb-2">Information Security </p>
+                <p class=" text-muted mb-2">Machine Learning</p>
+                <p class=" text-muted mb-2">Model driven framework for automated software generation in Distributed Systems environment</p>
+                <p class=" text-muted mb-2">Neural Networks and Soft Computing </p>
+                <p class=" text-muted mb-2">Parallel Processing</p>
+                <p class=" text-muted mb-2">Rough and Fuzzy systems</p>
+                <p class=" text-muted mb-2">Software Engineering </p>
+                <p class=" text-muted mb-2">Secure Multi-party Computations</p>
+                <p class=" text-muted mb-2">Mobile Computing, Wireless Ad-hoc and Sensors Net-works, Cyber Physical Systems and Security </p>
+                <p class=" text-muted mb-2">Computational Neuroscience </p>
+                <p class=" text-muted mb-2">Computer Vision, Image Processing and Graphics and Multimedia</p>
+                <p class=" text-muted mb-2">Algorithms and Graph Theory</p>
+                <h4 class="mt-4">ISEAP</h4>
+                <p class=" text-muted mb-2">National Institute of Technology, Warangal is identified as Resource Centre under Information Security Education Awareness (ISEA) Project Phase II sponsored by Ministry of Electronics and Communication Technology (MeitY), Govt. of India. Objective of this resource centre is to mentor participating Institutes in the form of a cluster by providing technical support, academic handholding, conducting faculty training programs and guiding the researchers and faculties from the institutions identified as Participating Institutes under ISEA Project Phase-II. Besides this, the faculty of this Resource Centre are involved in carrying out R&D and academic activities with suitable guidance from Information Security Research Development Centre (ISRDCs).</p>
+                <p class=" text-muted mb-2">Department of Computer Science & Engineering is offering M Tech in (Computer Science & Information Security) since 2008. Faculty of CSE department are also guiding doctoral students in the Information Security and its allied areas.</p>
+                <h4 class="mt-4">Mini Center of Excellence for Big Data</h4>
+                <p class=" text-muted mb-2">
+                  <strong>Coordinators :</strong> Prof D V L N Somayajulu and Dr R B V Subramanyam
+                </p>
+                <p class=" text-muted mb-2">Fund sanctioned by NIT-Warangal : so far Rs.80.0 lakhs out of proposed Rs.1.0 crore.</p>
+                <p class=" text-muted mt-4 mb-1">The following are the specifications of a high-end-Server available in the center.</p>
+                <ul class="list_items_section">
+                  <li>HP make and ProLiant DL 980 Gen 7 model</li>
+                  <li>8 x Intel Xeon CPU E7 -2830 (2.14 GHz/ 8 – core/ 24 MB / 105w) Processor</li>
+                  <li>Intel 7500 chip set with node controller</li>
+                  <li>512 GB RAM</li>
+                  <li>HP SA 410i RAID controller with 1GB</li>
+                  <li>6*600GB 10K HDD</li>
+                  <li>4 x dual port Giga Bit Ethernet NIC</li>
+                  <li>2 x 10GBPS Ethernet Card</li>
+                  <li>OS: CentOS 6.5 with Hadoop 2.2</li>
+                </ul>
+                <p class=" text-muted mt-4 mb-1">Activities:</p>
+                <p class=" text-muted mt-4 mb-1">
+                  <strong>Education :</strong> Currently, Coordinators are offering courses
+                </p>
+                <ul class="list_items_section" style="list-style-type:lower-roman">
+                  <li>Data Science</li>
+                  <li>Big Data Analytics to I year - I sem M.Tech. (CSE) class</li>
+                </ul>
+                <p class=" text-muted mt-4 mb-1">
+                  <strong>Training :</strong>
+                </p>
+                <ul class="list_items_section" style="list-style-type:lower-roman">
+                  <li>One day workshop on "Big Data Analytics" conducted with C-DAC, Bangalore at Bangalore on 15-Feb-2014.</li>
+                  <li>ABCD-2014 - TEQIP-II sponsored A Five day workshop on Architecture, Algorithms, Analytics for Big Data using Cloud and Distributed Computing - a joint programme with C-DAC, Pune during 7-11 March, 2014.</li>
+                  <li>ABCD-2014 - TEQIP-II sponsored A Five day workshop on Architecture, Algorithms, Analytics for Big Data using Cloud and Distributed Computing - a joint programme with C-DAC, Pune during 7-11 March, 2014.</li>
+                </ul>
+                <p class=" text-muted mt-4 mb-1">
+                  <strong>Research :</strong> Currently, 4 M.Tech. students and 2 Ph.D. scholars are working on areas of Big Data Analytics.
+                </p>
+                <h4 class="mt-4">Publications</h4>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">P</span>h.D. Students List ( Full / Part Time) <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+              </div>
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-Phd" role="tabpanel" aria-labelledby="v-pills-Phd-tab">
+                <h4 class=" mb-4">Phd</h4>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">P</span>h.D. Students List ( Full / Part Time) <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+              </div>
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-Faculty" role="tabpanel" aria-labelledby="v-pills-Faculty-tab">
+                <h4 class=" mb-4">Faculty</h4>
+               
+               
+               <!-- <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">F</span>aculty Profiles <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </p>-->
+
+
+
+               
+               
+            
+            
+                  <section id="profile-info">
+            
+               
+            
+            
+            <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/1.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. S. Ravi Chandra</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 8702462730<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> ravic@nitw.ac.in</p>
+                          
+                        <p>Data Privacy, Software Engineering, Software Architecture, Design Patterns, Service Orient...
+                        
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/2.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. D V L N Somayajulu</h5>
+                        <span>Professor (HAG)</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 91 870 2462703<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> soma@nitw.ac.in</p>
+                          
+                        <p>Databases, Information Extraction, Query Processing, Big Data and Privacy...
+                        
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            
+            
+            
+            
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/3.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. B. B. Amberker</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9108702462704<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> bba@nitw.ac.in</p>
+                          
+                        <p>My current focus in cryptology is on the provable security of cryptographic primitives and...
+                        
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/4.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Sriram G. Sanjeevi</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 08702468711<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> sgs@nitw.ac.in, sgsanjeevi108@gmail.com</p>
+                          
+                        <p>Machine Learning and Soft Computing; Data Mining, Big Data Analytics, Software defined N...
+                        
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/5.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. R. B. V. Subramaanyam</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 949 134 6969 , 9441 434 454<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> rbvs66@gmail.com,rbvs66@nitw.ac.in</p>
+                          
+                        <p>Data Mining - Association Rules, Sequential Patterns, Temporal data mining, Fuzzy Data Min...
+                        
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/6.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. P. Radha Krishna</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 08702462703<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> prkrishna@nitw.ac.in</p>
+                          
+                        <p>Data Mining, Big Data, Machine Learning, Databases and Workflow Systems....
+                        
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/7.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. K. Ramesh</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9849432598<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> kramesh@nitw.ac.in , srirameesh@yahoo.com</p>
+                          
+                        <p>Serverless Architectures and Coding infrastructures in Service-oriented, Distributed, Secu...
+                        
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/8.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Ch. Sudhakar</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9440647945<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> chapram@nitw.ac.in</p>
+                          
+                        <p>Unix Internals, Advanced Operating Systems, Cloud Computing, Distributed Systems, High Per...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/9.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. R. Padmavathy</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 08702468738, 9440173819<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> rpadma@nitw.ac.in</p>
+                          
+                        <p>Cryptanalysis and Network Security...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/10.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Rashmi Ranjan Rout</h5>
+                        <span>Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 08332969418<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> rashmirsays@gmail.com</p>
+                          
+                        <p>Mobile Computing; Wireless Ad-hoc and Sensor Networks; Online Social Networks; Cyber Physi...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/11.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. T. Ramakrishnudu</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9866876842<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> trk@nitw.ac.in</p>
+                          
+                        <p>Distributed data mining., Big Data Analytics, Web Mining, Text Mining, Urban Computing, So...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/12.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Raju Bhukya</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9700553922, 8332969733<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> raju@nitw.ac.in,drrajunitw@gmail.com</p>
+                          
+                        <p>Bioinformatics, Agri-Informatics, Internet of things...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/13.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. U. S. N. Raju</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9440149146<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> usnraju@nitw.ac.in</p>
+                          
+                        <p>Computer Vision and Image Processing, Digital Olfaction....
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            
+                 
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/14.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. K. V. Kadambari</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9705460461<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> kadambari@nitw.ac.in</p>
+                          
+                        <p>Computational Neuroscience, Machine Learning, Artificial Intelligence, Neuro-Imaging....
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/15.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. P. Venkata Subba Reddy</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 8332969417<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> pvsr@nitw.ac.in</p>
+                          
+                        <p>Algorithms and Graph Theory...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/16.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Priyanka Chawla</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 7982750652<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> priyankac@nitw.ac.in</p>
+                          
+                        <p>Cloud Computing, Fog Computing, Software Engineering, Nature Inspired Computing, Artificia...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/17.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Sriram Kailasam</h5>
+                        <span>Associate Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 8894275490<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> sriramk@nitw.ac.in</p>
+                          
+                        <p>Distributed Systems, Scalable algorithms for Formal Concept Analysis, Big Data Analytics...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/18.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Manjubala Bisi</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9502940360<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> manjubalabisi@nitw.ac.in</p>
+                          
+                        <p>Software Engineering (Software Reliability Modelling and Prediction); Machine Learning; S...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/19.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. I. Earnest Paul</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9494466490<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> iep@nitw.ac.in</p>
+                          
+                        <p>Visual Analytics; Video Content Analysis; Computer Vision; Deep Learning; Soft Computing; ...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+            
+            
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/20.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. E. Suresh Babu</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9440959713<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> esbabu@nitw.ac.in</p>
+                          
+                        <p>Wireless Networks, Internet of Things (IoT), IoT Security, Fog Security, Edge Security, B...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/21.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. M. Sandhya</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9394468554<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> msandhya@nitw.ac.in</p>
+                          
+                        <p>Biometrics Image Processing Pattern Recognition...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/22.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. M. Srinivas</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> msv@nitw.ac.in</p>
+                          
+                        <p>Machine Learning; Medical Imaging; Computer Vision; Deep Learning ; and Sparse Represent...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/23.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Ilaiah Kavati</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9848916272<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> ilaiahkavati@nitw.ac.in</p>
+                          
+                        <p>Image Processing; Internet of Things; Biometrics, Security...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/24.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Sujit Das</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9434588993<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> sujit.das@nitw.ac.in</p>
+                          
+                        <p>Soft Computing, Artificial Intelligence, Evolutionary Computation, Machine learning, and M...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/25.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Sanjaya Kumar Panda</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9861126947<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> sanjaya@nitw.ac.in</p>
+                          
+                        <p>Cloud and Fog Computing, Recommender Systems and Internet of Things...
+
+
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/26.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Balaprakasa Rao Killi</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 7002457102 <br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> bsprao@nitw.ac.in</p>
+                          
+                        <p>Software Defined Networking.Internet of Things.Reinforcement Learning.Game Theory.Network ...
+
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/27.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Venkateswara Rao Kagita</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 6281746931<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> venkat.kagita@nitw.ac.in</p>
+                          
+                        <p>Recommender Systems; Machine Learning; Deep Learning; Data Mining;...
+
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                   
+            
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/28.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Ramalingaswamy Cheruku</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 9573827143<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> rmlswamy@nitw.ac.in</p>
+                          
+                        <p>Soft Computing, Optimization, Deep Learning and Its Applications, ANNs, Machine Learning, ...
+
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4">
+                    <div class="card ">
+                      <img src="assets/images/29.jpg" alt="" />
+                      <div class="data">
+                        <h5>Dr. Sangharatna Godboley</h5>
+                        <span>Assistant Professor</span><hr/>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 7013306805<br/>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> sanghu@nitw.ac.in</p>
+                          
+                        <p>Program Analysis; Software Testing; Fuzzing; Verification; Smart Contracts; Machine Learni...
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+            
+            
+            
+                    
+                    </section>
+              
+              
+
+
+
+
+
+
+              </div>
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-NonTeachingStaff" role="tabpanel" aria-labelledby="v-pills-NonTeachingStaff-tab">
+                <h4 class=" mb-4">Non-Teaching Staff</h4>
+                <table class="table table-sm ">
+                  <thead>
+                    <tr>
+                      <th>Sl. No</th>
+                      <th>Name of the Staff Member</th>
+                      <th>Designation</th>
+                      <th>Division</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Smt. K.S.S.S. Padmasree</td>
+                      <td>Senior Technical Assistant</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Smt. Shalini Avala</td>
+                      <td>Technical Assistant</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Sri . R Shivamallikarjun</td>
+                      <td>Technical Assistant</td>
+                      <td>CSE</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td> Sri R. Jeevan kumar</td>
+                      <td>Senior Technician</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Sri. D. Ramesh</td>
+                      <td>Senior Technician</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Sri. B. Ramesh</td>
+                      <td>Junior Assistant</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>K. Venkatamma</td>
+                      <td> Technician (upgd)</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td> K. Jayaraj</td>
+                      <td>Caretaker SG-II</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>B. Sunil kumar</td>
+                      <td>Electrician (Daily wage)</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>T. Varsha Sree</td>
+                      <td>Skilled</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td> M. Padma Rao</td>
+                      <td>Skilled</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>P. Suma </td>
+                      <td>Skilled</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>M. Mahendar</td>
+                      <td>Un-Skilled</td>
+                      <td> CSE</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>K. Srinivasulu</td>
+                      <td>Un-Skilled</td>
+                      <td>CSE</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>T. Sampath </td>
+                      <td> Un-Skilled</td>
+                      <td> CSE</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-Students" role="tabpanel" aria-labelledby="v-pills-Students-tab">
+                <h4 class=" mb-4">Students</h4>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">B</span>.Tech Fourth Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">B</span>.Tech Second Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">B</span>.Tech Third Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">M</span>.Tech First Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">M</span>.Tech Second Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">M</span>CA First Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">M</span>CA Second Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">M</span>CA Third Year <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+              </div>
+
+
+
+
+
+
+
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-NotableAlumni" role="tabpanel" aria-labelledby="v-pills-NotableAlumni-tab">
+                <h4 class=" mb-4">Notable Alumni</h4>
+                
+              </div>
+
+
+              <!--<div class="tab-pane fade  bg-white p-2" id="v-pills-TechnicalSociety" role="tabpanel" aria-labelledby="v-pills-TechnicalSociety-tab">
+                <h4 class=" mb-4">Technical Society</h4>
+                
+              </div>-->
+
+
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-AcademicResearchGroup" role="tabpanel" aria-labelledby="v-pills-AcademicResearchGroup-tab">
+                <h4 class=" mb-4">Academic Research Group</h4>
+                
+              </div>
+
+
+              
+              
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-ResearchScholars" role="tabpanel" aria-labelledby="v-pills-ResearchScholars-tab">
+                
+
+                <h4 class=" mb-4">Ph.D. Awardee</h4>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">L</span>ist of Ph.D. Awardees <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+
+
+
+                <h4 class=" mb-4">Ph.D. On Roll</h4>
+                <p>
+                  <a href="" target="_blank">
+                    <span class="highlight">P</span>h.D. Students List ( Full / Part Time) <i class="fa fa-link " aria-hidden="true"></i>
+                  </a>
+                </p>
+                
+              </div>
+
+
+
+
+              <div class="tab-pane fade  bg-white p-2" id="v-pills-PhotoGallery" role="tabpanel" aria-labelledby="v-pills-PhotoGallery-tab">
+                <h4 class="mb-4">Photo Gallery</h4>
+                
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+              <p > Copyright © Centre for Digital Infrastructure and Services </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

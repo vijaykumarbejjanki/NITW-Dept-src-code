@@ -1,0 +1,329 @@
+p,tbody{
+   
+    color: #808080;
+    line-height: 25.5px;
+	margin-bottom:1rem;
+    /* font-family: 'Montserrat', sans-serif !important; */
+    /* font-family: 'Roboto', sans-serif; */
+    /*font-family: "Work Sans", sans-serif;*/
+
+    text-align: justify;
+}
+
+a:hover{text-decoration:none;}
+
+
+.navbar{padding: 1rem 1rem 0.5rem 1rem;}
+.nav-pills-custom .nav-link {
+    color: #000;
+    background: #f8f9fa;
+    position: relative;
+    font-weight: 600;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #fff;
+    background: #c20315;
+}
+
+
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #c20315;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+
+.nav-pills .nav-link{border-radius: 0%;}
+
+
+.footer{
+    background: #c20315 !important;
+    
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.footer p{color: #fff;margin-bottom: 0px;}
+
+.head_of_dept{margin: 10% 0%;}
+.head_of_dept h6{color:#c20315;margin-top: 2%;}
+header{margin-bottom: 2%;}
+.dept-title{
+    border-bottom: 0;
+  
+}
+
+.dept-title a{
+    color: #000;
+    
+    font-size: 1.5em;
+}
+
+span.highlight{color: #c20315;font-weight: 500;}
+
+.tab-content a{font-weight: 500;color: #6c757d;}
+.tab-content p:hover a{text-decoration: none;color: #c20315;}
+hr{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.list_items_section li{color:#6c757d!important}
+.copyright p{text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+/*Cards CSS Start*/
+
+.card {
+  
+    /*transition:0.5s;*/
+    background-color: transparent !important;
+    cursor: pointer;
+   /* padding: 5%;*/
+    /*border: 2px solid #ddd;*/
+    /*box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);*/
+    border-radius: 0.5rem;
+    margin-bottom: 2%;
+    border: 0px;
+  }
+  .card:hover {
+   /* border: 2px solid #c20315;*/
+  }
+  
+  
+  .tab-content .card{
+    padding: 0px;
+    border: 0px;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform 0.3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: "";
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before,
+  .card:hover::after,
+  .card:focus::before,
+  .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+  
+  /*Cards CSS End*/
+  
+  header h1 {
+    color: #000;
+    font-weight: 600;
+    font-size: 36px;
+    /* color: #1aa3dd; */
+    line-height: 50px;
+    margin-bottom: 50px;
+    /*margin-top: 40px;*/
+  }
+  
+  span.bold {
+    color: #000;
+    font-weight: 600;
+  }
+  
+  
+  .dropdown button{
+  
+    background: no-repeat;
+                        color: #fff;
+                        border: none;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+  }
+  
+  
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+  
+    padding: 10%;
+    text-align: left;
+    
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    font-weight: 600;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {color:#c20315;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .card-block h5{
+    color: #c20315;
+    font-size: 20px;
+      font-weight: 600;
+  }
+  
+  
+  /*.account-details-section p{color: #000;}*/
+  
+  
+  .main-site-section a{ color: #808080;}
+  .alumni-services-section a:hover{ color: #c20315; font-weight: 600;}
+  span.highlight {
+    color: #c20315;
+    font-weight: 600;
+  }
+  
+  
+  .event-img img{
+    margin-bottom: 5%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Faculty profile Css Start */
+  
+  #profile-info{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow:3;
+  }
+  #profile-info .card{
+    padding: 0% 10%;
+    margin-bottom: 10%;
+    border-radius: 0px;
+    box-shadow: none;
+    border: 0px;
+   
+  }
+  #profile-info .card:nth-of-type(3n){
+    margin-right:0;
+  }
+  #profile-info .card img {
+    width: 100%;
+    min-height:100%;
+   /* transition:all 0.9s*/
+  }
+  #profile-info .card:hover img{
+   /*transform:scale(1.2,1.2)*/
+  }
+  #profile-info .data {
+    /*position: absolute;*/
+    bottom: 0%;
+    background: #fff;
+    text-align:left;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    /*opacity: 0.8;*/
+    /*transition: all 0.4s*/
+  }
+  
+  
+  
+  #profile-info .data h2 {
+    margin: 0 0 5px 0;
+    transition:color 0.4s
+  }
+  
+  #profile-info .data p {
+    /*opacity: 0;*/
+    text-align:left;
+    transition: all 0.2s
+  }
+  
+  /*#award .card:hover .data p,.card:hover .data a {
+    font-size: 12px;
+    opacity: 1
+  }*/
+  
+  #profile-info .data h5{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 0px;
+    color: #c20315;
+    font-weight: 600;
+  }
+  
+  #profile-info .data span{
+    font-weight: 400;
+      font-size: 14px;
+      color: #808080;
+      line-height: 23.5px;
+  }
+  
+  #profile-info .data a{
+    color:#333;
+    text-decoration:none;
+    padding:20px;
+    opacity:0
+  }
+  #profile-info .data a:hover,.card:hover h2{
+    color:#38c
+  }
+  
+  @media (max-width:799px){
+    #profile-info .card{width:100%;margin-right:0}
+  }
+    
+  /* Faculty profile Css End */
+  
