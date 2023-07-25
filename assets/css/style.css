@@ -1,329 +1,590 @@
-p,tbody{
-   
-    color: #808080;
-    line-height: 25.5px;
-	margin-bottom:1rem;
-    /* font-family: 'Montserrat', sans-serif !important; */
-    /* font-family: 'Roboto', sans-serif; */
-    /*font-family: "Work Sans", sans-serif;*/
 
-    text-align: justify;
+
+
+p,
+tbody {
+  color: #808080;
+  line-height: 25.5px;
+ /* margin-top: 0.5rem;*/
+  margin-bottom: 1rem;
+  /* font-family: 'Montserrat', sans-serif !important; */
+  /* font-family: 'Roboto', sans-serif; */
+  /*font-family: "Work Sans", sans-serif;*/
+  /*text-align: justify;*/
 }
 
-a:hover{text-decoration:none;}
+a:hover {
+  text-decoration: none;
+}
 
+h4 {
+  color: #c20315;
+}
 
-.navbar{padding: 1rem 1rem 0.5rem 1rem;}
+h3 {
+  color: #c20315;
+}
+
+.navbar {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
 .nav-pills-custom .nav-link {
-    color: #000;
-    background: #f8f9fa;
-    position: relative;
-    font-weight: 600;
-	border-bottom: 1px solid #e5e5e5;
+  color: #000;
+  background: #00b6e2;
+  position: relative;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-pills-custom .nav-link.active {
-    color: #fff;
-    background: #c20315;
+  color: #fff;
+  background: #c20315;
 }
 
-
 @media (min-width: 992px) {
-    .nav-pills-custom .nav-link::before {
-        content: '';
-        display: block;
-        border-top: 8px solid transparent;
-        border-left: 10px solid #c20315;
-        border-bottom: 8px solid transparent;
-        position: absolute;
-        top: 50%;
-        right: -10px;
-        transform: translateY(-50%);
-        opacity: 0;
-    }
+  .nav-pills-custom .nav-link::before {
+    content: "";
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #c20315;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
 }
 
 .nav-pills-custom .nav-link.active::before {
-    opacity: 1;
+  opacity: 1;
 }
 
-
-.nav-pills .nav-link{border-radius: 0%;}
-
-
-.footer{
-    background: #c20315 !important;
-    
-    text-align: center;
-    padding: 0.5rem 0;
-}
-.footer p{color: #fff;margin-bottom: 0px;}
-
-.head_of_dept{margin: 10% 0%;}
-.head_of_dept h6{color:#c20315;margin-top: 2%;}
-header{margin-bottom: 2%;}
-.dept-title{
-    border-bottom: 0;
-  
+.nav-pills .nav-link {
+  border-radius: 0%;
 }
 
-.dept-title a{
-    color: #000;
-    
-    font-size: 1.5em;
+.footer {
+  background: #c20315 !important;
+
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.footer p {
+  color: #fff;
+  margin-bottom: 0px;
 }
 
-span.highlight{color: #c20315;font-weight: 500;}
-
-.tab-content a{font-weight: 500;color: #6c757d;}
-.tab-content p:hover a{text-decoration: none;color: #c20315;}
-hr{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+.head_of_dept {
+  margin: 10% 0%;
+}
+.head_of_dept h6 {
+  color: #c20315;
+  margin-top: 2%;
+}
+header {
+  margin-bottom: 2%;
+}
+.dept-title {
+  border-bottom: 0;
 }
 
-.list_items_section li{color:#6c757d!important}
-.copyright p{text-align: center;}
+.dept-title a {
+  color: #000;
 
+  font-size: 1.5em;
+}
 
+span.highlight {
+  color: #c20315;
+  font-weight: 500;
+}
 
+.tab-content a {
+  font-weight: 500;
+  color: #000;
+}
+.tab-content p:hover a {
+  text-decoration: none;
+  color: #c20315;
+}
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
-
-
-
-
-
-
+.list_items_section li {
+  color: #6c757d !important;
+}
+.copyright p {
+  text-align: center;
+}
 
 /*Cards CSS Start*/
 
 .card {
+  /*transition:0.5s;*/
+  background-color: transparent !important;
+  cursor: pointer;
+  /* padding: 5%;*/
+  /*border: 2px solid #ddd;*/
+  /*box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);*/
+  border-radius: 0.5rem;
+  margin-bottom: 2%;
+  border: 0px;
+}
+.card:hover {
+  /* border: 2px solid #c20315;*/
+}
+
+.tab-content .card {
+  padding: 0px;
+  border: 0px;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+/*Cards CSS End*/
+
+header h1 {
+  color: #000;
+  font-weight: 600;
+  font-size: 36px;
+  /* color: #1aa3dd; */
+  line-height: 50px;
+  margin-bottom: 50px;
+  /*margin-top: 40px;*/
+}
+
+span.bold {
+  color: #000;
+  font-weight: 600;
+}
+
+.dropdown button {
+  background: no-repeat;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  padding: 10%;
+  text-align: left;
+
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-weight: 600;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #c20315;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.card-block h5 {
+  color: #c20315;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*.account-details-section p{color: #000;}*/
+
+.main-site-section a {
+  color: #808080;
+}
+.alumni-services-section a:hover {
+  color: #c20315;
+  font-weight: 600;
+}
+span.highlight {
+  color: #c20315;
+  font-weight: 600;
+}
+
+.event-img img {
+  margin-bottom: 5%;
+}
+
+/* Faculty profile Css Start */
+
+#profile-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 3;
+}
+#profile-info .card {
+  padding: 0% 6%;
   
-    /*transition:0.5s;*/
-    background-color: transparent !important;
-    cursor: pointer;
-   /* padding: 5%;*/
-    /*border: 2px solid #ddd;*/
-    /*box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);*/
-    border-radius: 0.5rem;
-    margin-bottom: 2%;
-    border: 0px;
-  }
-  .card:hover {
-   /* border: 2px solid #c20315;*/
-  }
-  
-  
-  .tab-content .card{
-    padding: 0px;
-    border: 0px;
-  }
-  
-  .card::before,
-  .card::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scale3d(0, 0, 1);
-    transition: transform 0.3s ease-out 0s;
-    background: rgba(255, 255, 255, 0.1);
-    content: "";
-    pointer-events: none;
-  }
-  .card::before {
-    transform-origin: left top;
-  }
-  .card::after {
-    transform-origin: right bottom;
-  }
-  .card:hover::before,
-  .card:hover::after,
-  .card:focus::before,
-  .card:focus::after {
-    transform: scale3d(1, 1, 1);
-  }
-  
-  /*Cards CSS End*/
-  
-  header h1 {
-    color: #000;
-    font-weight: 600;
-    font-size: 36px;
-    /* color: #1aa3dd; */
-    line-height: 50px;
-    margin-bottom: 50px;
-    /*margin-top: 40px;*/
-  }
-  
-  span.bold {
-    color: #000;
-    font-weight: 600;
-  }
-  
-  
-  .dropdown button{
-  
-    background: no-repeat;
-                        color: #fff;
-                        border: none;
-                        font-size: 1.1rem;
-                        font-weight: 600;
-  }
-  
-  
-  
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-  
-    padding: 10%;
-    text-align: left;
-    
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    font-weight: 600;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {color:#c20315;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .card-block h5{
-    color: #c20315;
-    font-size: 20px;
-      font-weight: 600;
-  }
-  
-  
-  /*.account-details-section p{color: #000;}*/
-  
-  
-  .main-site-section a{ color: #808080;}
-  .alumni-services-section a:hover{ color: #c20315; font-weight: 600;}
-  span.highlight {
-    color: #c20315;
-    font-weight: 600;
-  }
-  
-  
-  .event-img img{
-    margin-bottom: 5%;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* Faculty profile Css Start */
-  
-  #profile-info{
-    display:flex;
-    flex-wrap: wrap;
-    flex-grow:3;
-  }
-  #profile-info .card{
-    padding: 0% 10%;
-    margin-bottom: 10%;
-    border-radius: 0px;
-    box-shadow: none;
-    border: 0px;
-   
-  }
-  #profile-info .card:nth-of-type(3n){
-    margin-right:0;
-  }
-  #profile-info .card img {
-    width: 100%;
-    min-height:100%;
-   /* transition:all 0.9s*/
-  }
-  #profile-info .card:hover img{
-   /*transform:scale(1.2,1.2)*/
-  }
-  #profile-info .data {
-    /*position: absolute;*/
-    bottom: 0%;
-    background: #fff;
-    text-align:left;
-    width: 100%;
-    height: 360px;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 10px 0px;
-    box-sizing: border-box;
-    /*opacity: 0.8;*/
-    /*transition: all 0.4s*/
-  }
-  
-  
-  
-  #profile-info .data h2 {
-    margin: 0 0 5px 0;
-    transition:color 0.4s
-  }
-  
-  #profile-info .data p {
-    /*opacity: 0;*/
-    text-align:left;
-    transition: all 0.2s
-  }
-  
-  /*#award .card:hover .data p,.card:hover .data a {
+  border-radius: 0px;
+  box-shadow: none;
+  border: 0px;
+}
+#profile-info .card:nth-of-type(3n) {
+  margin-right: 0;
+}
+#profile-info  img {
+  /* width: 100%;
+    min-height:100%;*/
+
+  width: 192px;
+  height: 192px;
+
+  border: 1px solid #dee2e6;
+    padding: 0.25rem;
+  /* transition:all 0.9s*/
+}
+#profile-info .card:hover img {
+  /*transform:scale(1.2,1.2)*/
+}
+#profile-info .data {
+  /*position: absolute;*/
+  bottom: 0%;
+  background: #fff;
+  text-align: left;
+  width: 100%;
+  /*height: 360px;*/
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /*padding: 10px 0px;*/
+  box-sizing: border-box;
+  /*opacity: 0.8;*/
+  /*transition: all 0.4s*/
+}
+
+#profile-info .data h2 {
+  margin: 0 0 5px 0;
+  transition: color 0.4s;
+}
+
+#profile-info .data p {
+  /*opacity: 0;*/
+  text-align: left;
+  transition: all 0.2s;
+}
+
+/*#award .card:hover .data p,.card:hover .data a {
     font-size: 12px;
     opacity: 1
   }*/
-  
-  #profile-info .data h5{
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 0px;
-    color: #c20315;
-    font-weight: 600;
+
+#profile-info .data h5 {
+  font-size: 18px;
+
+  margin-bottom: 0px;
+  color: #c20315;
+  font-weight: 600;
+}
+
+#profile-info .data span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+  line-height: 23.5px;
+}
+
+#profile-info .data a {
+  color: #c20315;
+  text-decoration: none;
+  /*padding:20px;*/
+  /*opacity:0*/
+}
+
+#profile-info .data p.contact-info{
+  margin-top: 0.5rem;
+}
+
+#profile-info .data p.contact-info a {
+  color: #808080;
+  font-weight: normal;
+}
+
+#profile-info .data p.contact-info a:hover {
+  color: #000;
+}
+
+#profile-info .data a:hover,
+.card:hover h2 {
+  color: #000;
+}
+
+#profile-info .profile-info-individual{
+  margin-bottom: 5%;
+
+}
+
+@media (max-width: 799px) {
+  #profile-info .card {
+    padding: 5% 0%;
+    width: 100%;
+    margin-right: 0;
   }
+}
+
+/* Faculty profile Css End */
+
+
+
+
+/*Accordian CSS*/
+
+.acc h5.card-title {
+  margin-bottom: 0px;
+}
+
+.acc h3 {
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.acc h3:after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.acc.active h3:after {
+  content: '-';
+}
+
+.acc .content {
+  background-color: #fff;
+  display: none;
+}
+
+.acc .content-inner {
+  padding: 5% 0%;
+}
+
+.acc {
+  border-bottom: 1px solid #fff;
+}
+
+
+
+/* server details card*/
+.details-card {
+  background: #ffffff;
+  /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);*/
+  border-radius: 15px;
+  padding: 10px 20px 10px 0px;
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Academic and laboratory facilities */
+
+.academic-programmes .academic-programmes-individual,
+.laboratory-facilities .laboratory-facilities-individual {
+  margin-bottom: 5%;
+}
+
+.ul-check {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+}
+
+.card-title {
+  color: #000;
+  font-size: 20px;
+}
+
+.text-black {
+  font-weight: 400;
   
-  #profile-info .data span{
-    font-weight: 400;
-      font-size: 14px;
-      color: #808080;
-      line-height: 23.5px;
-  }
+}
+
+.item-card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.item-card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.item-card-title i {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  color: #ffa710
+}
+
+.card-text {
+  height: 80px;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+
+.card::before {
+  transform-origin: left top;
+}
+
+.card::after {
+  transform-origin: right bottom;
+}
+
+
+
+header h3{margin-bottom: 3%;}
+
+
+p.get_in_touch {
+  margin-top: 5%;
+  padding: 2% 0%;
+  border-top: 1px solid #bc4028;
+  border-bottom: 1px solid #bc4028;
+}
+
+
+
+a.more-info-link{
+  /*margin-top: 5%;*/
+  /*background-color: #eaeaea;*/
+                          color: #666;
+                          /*-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.25);
+                          box-shadow: inset 0 -2px 0 rgba(0,0,0,.25);*/
+                          /*padding: 12px 20px;*/
+}
+
+
+a.more-info-link:hover{
   
-  #profile-info .data a{
-    color:#333;
-    text-decoration:none;
-    padding:20px;
-    opacity:0
-  }
-  #profile-info .data a:hover,.card:hover h2{
-    color:#38c
-  }
-  
-  @media (max-width:799px){
-    #profile-info .card{width:100%;margin-right:0}
-  }
-    
-  /* Faculty profile Css End */
-  
+    color: #c20315 !important;
+}
+
+
+.vision-mission-section{
+  border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+
+.image img{
+  border: 1px solid #dee2e6;
+  padding: 0.25rem;
+}
+
+
+.academic_group .card {
+  margin-bottom: 10%;
+}
+
+.academic_group a {
+  font-weight: normal;
+  color: #808080;
+}
+
+
+
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #0093b7;
+  border: none;
+  margin-bottom: 2px;
+}
+
+/*.nav-tabs .nav-link.active::before {
+border-color: #0093b7 transparent transparent transparent;
+border-style: solid;
+border-width: 20px 50px 0px 50px;
+content: "";
+display: block;
+
+
+position: absolute;
+width: 0px;
+top: 40px;
+z-index: 10;
+
+
+
+}*/
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  background-color: #00b6e2;
+  border: none;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+  margin-left: 1%;
+  margin-bottom: 2px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
